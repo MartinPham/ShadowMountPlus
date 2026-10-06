@@ -631,7 +631,7 @@ int main(void) {
     notify_system_l10n(SM_L10N_STARTUP_WEB, SHADOWMOUNT_VERSION,
                        web_address, startup_cfg.api_port);
   } else {
-    notify_system_l10n(SM_L10N_STARTUP, SHADOWMOUNT_VERSION);
+    //notify_system_l10n(SM_L10N_STARTUP, SHADOWMOUNT_VERSION);
   }
   log_non_empty_scan_paths();
 
