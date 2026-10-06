@@ -154,8 +154,7 @@ static bool send_rich_notification(const char *message) {
   escaped_version[0] = '\0';
   escaped_action[0] = '\0';
   append_json_escaped(escaped_message, sizeof(escaped_message), message);
-  append_json_escaped(escaped_version, sizeof(escaped_version),
-                      SHADOWMOUNT_VERSION);
+  append_json_escaped(escaped_version, sizeof(escaped_version), "Library");
   append_json_escaped(escaped_action, sizeof(escaped_action),
                       sm_l10n_get(SM_L10N_ACTION_DEBUG_SETTINGS));
   if (!build_notification_metadata(created_at, notification_id,
