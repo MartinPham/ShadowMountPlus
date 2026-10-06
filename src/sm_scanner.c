@@ -1340,7 +1340,7 @@ static bool run_full_scan_cycle_impl(bool startup_sync, const char *reason,
     *unstable_found_out = unstable_found;
 
   if (startup_sync && !should_abort_scan_cycle()) {
-    notify_system_rich_l10n(true, SM_L10N_LIBRARY_SYNCED, total_found_games);
+    //notify_system_rich_l10n(true, SM_L10N_LIBRARY_SYNCED, total_found_games);
   }
 
   return !should_abort_scan_cycle();
